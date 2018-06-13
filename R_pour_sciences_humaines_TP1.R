@@ -6,7 +6,7 @@
 # ******************************************************************
 #   
 # A la base, R est une grosse machine à calculer. 
-# Au début des ordinateurs appelait ce genre de machines
+# Au début des ordinateurs, on appelait ce genre de machines
 # "number crunching machines".
 
 # Faisons quelques calculs...
@@ -208,9 +208,15 @@ plot(x,type="l", col="red")
 
 
 # Dans la ligne plot(x2,type="l") Changez "l" en "o" et tapez la 
-# commande ci-dessous.
-# Executez-là. 
-# Qu'observez-vous?
+# commande ci-dessous:
+
+
+# ...................
+# Executez-là. (ctrl+ENTER)
+# Qu'observez-vous sur le graphique?
+
+
+
 
 # _________________________________________________________________
 
@@ -228,12 +234,27 @@ occurrences
 barplot(occurrences)
 pie(occurrences)
 
-# graphique avec la conversion en pourcentage:
-pourcentages <- prop.table(table(sexe))
-pourcentages
+# graphique avec la conversion en frequence:
+frequence <- prop.table(table(sexe))
+frequence
 
-barplot(pourcentages)
-pie(pourcentages)
+barplot(frequence)
+pie(frequence)
+
+# A vous 1 ! Crééz une nouvelle liste et faites les graphiques.
+
+# A vous 2 ! Pour convertir les fréquences en pourcentages on 
+# multiplie le vecteur frequence par 100. Essayez ! 
+
+
+
+
+
+# stockez cette multiplication dans un vecteur nommé pourcentage.
+
+
+# faites les graphiques avec ce vecteur nommé pourcentage !
+
 
 
 # A votre avis: à quoi servent les fonctions table(), barplot(), 
@@ -250,7 +271,7 @@ pie(pourcentages)
 
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# @@@@@@@@@@@@@@@@@@ BILAN DE LA SEANCE @@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@@@@@@@ QUIZ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 # A quoi servent la fonction mean() et sqrt()?
@@ -273,4 +294,67 @@ sexe <- c("Homme","Homme","Homme","Homme","Homme", "Femme", "Femme", "Femme")
 
 
 
-# Quel graphiques permettent de représenter des chiffres?
+# Quel graphiques permettent de représenter des chiffres ?
+
+# Réponse: ..........................................
+
+
+
+# Comment peut-on créer un graphique avec une ligne ?
+
+# Réponse: ..........................................
+
+
+# Que doit-on ajouter à droite et à gauche
+# de chaque élément d'une liste de mots/d'énoncés?
+# Ex: mots <- c(?homme?, ?femme?.....)
+
+# Réponse: ..........................................
+
+
+# Quelle fonction permet la création d'un graphique en barre ?
+
+# Réponse: ..........................................
+
+
+# Quelle fonction permet la création d'un graphique circulaire ?
+
+# Réponse: ..........................................
+
+# Comment calculer le nombre d'occurences dans une série de mots?
+
+# Réponse: ..........................................
+
+# Comment convertir ce nombre en fréquence ?
+
+# Réponse: ..........................................
+
+# Comment convertir les fréquences en pourcentages ?
+
+# Réponse: ..........................................
+
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@ BILAN DE LA SEANCE @@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+# Je sais faire : 
+# un calcul de base avec R : Oui / Non
+# la moyenne d'une série de chiffres : Oui / Non
+# la somme d'une série de chiffres: Oui / Non
+# la racine carrée d'un chiffre : Oui / Non
+
+# Je sais :
+# utiliser la fonction summary() : Oui / Non
+# créer un vecteur  : Oui / Non
+# créer une liste de données qualitatives : Oui / Non
+
+# Je peux créer un graphique avec :
+# Une série de chiffres : Oui / Non
+# Deux séries de chiffres Oui / Non
+# Une série de données qualitatives : Oui / Non
+
+
+
+# Combien de "oui" avez-vous ? Combien de "non" ?
