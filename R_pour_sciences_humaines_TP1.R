@@ -129,6 +129,7 @@ sqrt(25)
 # @@@@@@@@@@@@@@@@@@ PREMIERS GRAPHIQUES @@@@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+# A) AVEC DES CHIFFRES SEULEMENT
 
 # Avec UNE série de chiffres on peut faire un nuage de points:
 # (English: scatterplot)
@@ -159,7 +160,8 @@ qplot(x)
 
 qplot(x)
 
-# A vous ! Créez un histogramme à partir d'une série de chiffres
+# A vous ! Créez un histogramme à partir d'une série de chiffres. 
+# Nommer le vecteur x1
 # Utilisez hist(), puis qplot()
 
 
@@ -190,3 +192,85 @@ qplot(x,y)
 
 
 # A vous ! Créez 2 séries de chiffres et utilisez la fonction plot.
+# Nommez le vecteur x2
+
+
+
+# On peut aussi faire un graphique avec des lignes:
+plot(x)
+plot(x,type="l") # "l" est une abbréviation pour ligne.
+plot(x,type="l", col="red")
+
+
+
+# Faites votre graphique avec votre vecteur x2
+
+
+
+# Dans la ligne plot(x2,type="l") Changez "l" en "o" et tapez la 
+# commande ci-dessous.
+# Executez-là. 
+# Qu'observez-vous?
+
+# _________________________________________________________________
+
+# B) AVEC DES DONNEES TEXTUELLES (QUALITATIVES)
+# Attention, les guillemets sont obligatoire quand on crée
+# une liste avec du texte.
+
+sexe <- c("Homme","Homme","Homme","Homme","Homme", "Femme", "Femme", "Femme")
+sexe
+
+# graphique avec le nombre d'occurrences:
+occurrences<- table(sexe)
+occurrences
+
+barplot(occurrences)
+pie(occurrences)
+
+# graphique avec la conversion en pourcentage:
+pourcentages <- prop.table(table(sexe))
+pourcentages
+
+barplot(pourcentages)
+pie(pourcentages)
+
+
+# A votre avis: à quoi servent les fonctions table(), barplot(), 
+# pie() et prop.table(table())?
+
+# table() ......................................................
+
+# barplot() ....................................................
+
+# pie() ........................................................
+
+# prop.table(table()) ..........................................
+
+
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@ BILAN DE LA SEANCE @@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# A quoi servent la fonction mean() et sqrt()?
+
+# Réponse: ..........................................
+
+# Si l'on veut faire la somme d'une liste. Qu'elle est la fonction
+# la plus probable? (N'hésitez-pas à les tester)
+
+# a) somme() b) SUM() c) sum() d) Sum()
+
+# Réponse: ..........................................
+
+
+# Dans la ligne de code ci-dessous, quel est le vecteur ?
+
+sexe <- c("Homme","Homme","Homme","Homme","Homme", "Femme", "Femme", "Femme")
+
+# Réponse : ..........................................
+
+
+
+# Quel graphiques permettent de représenter des chiffres?
