@@ -38,13 +38,15 @@
 
 
 # Donnons un nom à notre calcul: on dit qu'on "stocke le calcul dans
-# un vector" (English:"you assign values to a vector")
+# un vecteur" (English:"you assign values to a vector")
 
 calcul1 <- 777*10
-# vérifions si calcul1 contient bien le résultat de notre calcul 
+
+# vérifions si calcul1 contient bien le résultat de notre calcul. Tapez:
+
 calcul1
 
-# A vous! Changez le nom du vecteur et changez le calcul: 
+# A vous ! Changez le nom du vecteur et changez le calcul: 
 
 
 
@@ -96,7 +98,7 @@ summary(notes)
 
 
 # A vous ! Calculez la moyenne d'une série de chiffres de votre choix !
-# Cela peut etre la taille des participants à ce stage ! 
+# Cela peut être la taille des participants à ce stage ! 
 # Appliquez ensuite la fonction summary à votre vecteur !
 
 
@@ -120,7 +122,7 @@ sqrt(25)
 
 # Un peu de déduction !
 # Sachant que 4^2 permet de calculer 
-# le carré de 4, quel sera le cube de 4 ?
+# le carré de 4, comment calculer le cube de 4 dans RStudio ?
 
 
 
@@ -129,7 +131,7 @@ sqrt(25)
 # @@@@@@@@@@@@@@@@@@ PREMIERS GRAPHIQUES @@@@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-# A) AVEC DES CHIFFRES SEULEMENT
+# A) AVEC DES CHIFFRES SEULEMENT (DONNEES QUANTITATIVES)
 
 # Avec UNE série de chiffres on peut faire un nuage de points:
 # (English: scatterplot)
@@ -139,28 +141,50 @@ sqrt(25)
 x <- c(1,2,3,3,3,3,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,8,9,10)
 plot(x)
 
+# INTERPRETATION: L'axe horizontal représente l'ordre de chaque chiffre dans la liste (index).
+# L'axe vertical représente les valeurs numériques listées dans x.
+
 # Avec une série de chiffres on peut aussi faire un histogramme:
 # (English; histogram)
 
 hist(x)
 hist(x, col="lightblue")
+# INTERPRETATION: l'axe x indique les tranches de valeurs de la liste de chiffre. 
+# (Un peu comme des tranches d'âge créés à partir d'un liste d'âge de personnes).
+# l'axe des y indique le nombre de chiffres compris dans chaque tranche. 
+# Vérifiez que cela est bien le cas !
 
-# Pour un graphique plus joli on peut utiliser la fonction
-# qplot(). Le "q" de qplot veut dire "quick" plot. 
-# Pour utiliser cette fonction, installez le package 
-# ggplot2 (m'appeler pour que je vous aide). Puis activez-le
-# à l'aide de la commande:
+
+
+# ☆ ∩∩ （ • •）☆
+# ┏━∪∪━━━━━━━━┓
+# ☆
+# ❝ ggplot2 is kawai!❞
+# ┗━━━━━━━━━━━┛
+
+
+# Pour un graphique plus joli voire "kawai" on peut utiliser la fonction
+# qplot() du package ggplot2.
+# Le "q" de qplot veut dire "quick" plot.
+# Pour utiliser cette fonction, installez le package ggplot2 (= fonctions bonus)
+# grâce à la première ligne de commande ci-dessous.
+# Puis activez-le à l'aide de la second commande. On dit que les packages sont stockés dans une 
+# bibliothèque de package. A l'instar d'un livre que l'on veut utiliser, on va chercher un package 
+# parmi les rayons de la bibliothèque de RStudio.
+
+install.packages("ggplot2")
+
 library(ggplot2)
 
 qplot(x)
 
-# A votre avis, quelle est la différence entre 
-# le premier histogramme et le second ? (à part la différence de couleurs)
+# Il s'agit également d'un histogramme, mais à votre avis, quelle est la différence entre 
+# le premier histogramme et le second ? (à part la différence de couleurs ;p).
 
 
 qplot(x)
 
-# A vous ! Créez un histogramme à partir d'une série de chiffres. 
+# A vous ! Créez un histogramme à partir d'UNE série de chiffres. 
 # Nommer le vecteur x1
 # Utilisez hist(), puis qplot()
 
@@ -175,32 +199,34 @@ qplot(x)
 # fonction plot() à nouveaux
 
 x <- c(1,2,3,3,3,3,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,8,9,10)
-y <- c(1,1,3,3.5,3,3,4,4,4,5,5,5,5,5,6,6,6.5,6,6,6,7.5,7,7,8.5,9,10)
+y <- c(2,3,4,5,7,7,6,6,6,6,6,6,5,5,5,5,5,4,4,4,3,3,3,3,2,1)
 plot(x,y)
 qplot(x,y)
 
 
 # Que se passe-t-il si l'on tape: plot(y,x) ? ESt-ce pareil pour
-# qplot(y,x)
+qplot(y,x)
 
 
 
 
-# Changez la dernière valeur de y à 5. Refaites le graphique.
+# Changez la dernière valeur de y à 10. Refaites le graphique.
 # Observez la différence.
 
 
 
-# A vous ! Créez 2 séries de chiffres et utilisez la fonction plot.
-# Nommez le vecteur x2
+# A vous ! Créez 2 séries de chiffres stockées dans un vecteur chacune et utilisez la fonction plot.
+# Nommez les vecteurs x2 et y2
 
 
 
-# On peut aussi faire un graphique avec des lignes:
+
+
+#___________________________________________________________________________________
+# On peut aussi faire un graphique avec des lignes :
 plot(x)
 plot(x,type="l") # "l" est une abbréviation pour ligne.
 plot(x,type="l", col="red")
-
 
 
 # Faites votre graphique avec votre vecteur x2
@@ -208,7 +234,7 @@ plot(x,type="l", col="red")
 
 
 # Dans la ligne plot(x2,type="l") Changez "l" en "o" et tapez la 
-# commande ci-dessous:
+# commande ci-dessous :
 
 
 # ...................
@@ -219,6 +245,10 @@ plot(x,type="l", col="red")
 
 
 # _________________________________________________________________
+# :¨·.·¨:
+# `·. ★The goal is to turn data into information, and information into insight.★°*ﾟ (Carly Fiorina, Former CEO of HP)
+# _________________________________________________________________
+
 
 # B) AVEC DES DONNEES TEXTUELLES (QUALITATIVES)
 # Attention, les guillemets sont obligatoire quand on crée
