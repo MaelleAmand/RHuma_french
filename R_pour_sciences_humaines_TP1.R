@@ -84,8 +84,9 @@ poeme
 # R peut calculer la moyenne d'une série de chiffres.
 # on utilise le mot anglais: mean. 
 # On prépare d'abord le vecteur qui contient
-# cette série de chiffres. Puis on fait la moyenne en 
-# tapant la fonction mean puis on ajoute le vecteur entre parenthèses.
+# cette série de chiffres.
+# Puis on fait la moyenne en tapant la fonction mean puis on ajoute le vecteur entre parenthèses.
+# On dit qu'on applique une fonction à un vecteur. (English: you apply a function to a vector)
 
 
 notes <- c(4,4,8,8)
@@ -308,7 +309,7 @@ pie(frequence)
 
 # Réponse: ..........................................
 
-# Si l'on veut faire la somme d'une liste. Qu'elle est la fonction
+# Si l'on veut faire la somme d'une liste. Quelle est la fonction
 # la plus probable? (N'hésitez-pas à les tester)
 
 # a) somme() b) SUM() c) sum() d) Sum()
@@ -377,7 +378,7 @@ sexe <- c("Homme","Homme","Homme","Homme","Homme", "Femme", "Femme", "Femme")
 
 # Je sais :
 # utiliser la fonction summary() : Oui / Non
-# créer un vecteur  : Oui / Non
+# créer un vecteur : Oui / Non
 # créer une liste de données qualitatives : Oui / Non
 
 # Je peux créer un graphique avec :
