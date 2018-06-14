@@ -10,5 +10,7 @@ https://github.com/statsmaths/diderot_r  & http://www.lpsm.paris/dw/doku.php?id=
 
 
 Thanks to teachers from Maths departments who cross the boarder towards the humanities to make us discover their world. 
-Thank you for all those who worked hard to create MOOCS on data analysis, those who answered questions in forums on RStudio and the Youtubers who make us progress.
+Thank you for all those who worked hard to create MOOCS on data analysis. 
+Thanks to those who answer questions in forums on RStudio.
+Thanks to Youtubers who spend time making videos to make us progress.
 
