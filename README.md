@@ -2,7 +2,7 @@
 
 Ces TP sont faits pour les étudiants en sciences humaines. De nouveaux TP seront progressivement ajoutés.
 
-TP1 : fonctions de bases et graphiques de base.
+TP1 : fonctions de base et graphiques de base.
 
 TP2 : maîtriser les paramètres graphiques.
 
