@@ -2,6 +2,20 @@
 
 Ces TP sont faits pour les étudiants en sciences humaines. De nouveaux TP seront progressivement ajoutés.
 
+TP1 : fonctions de bases et graphiques de base.
+TP2 : maîtriser les paramètres graphiques.
+*Prochainement*...
+TP3 : Importer des données et les transformer.
+TP4 : tests statistiques.
+TP5 : regression linéaire simple.
+TP6 : regression logistique simple.
+
+
+1) Pour utiliser ces TP, cliquez sur le bouton vert en haut à droit "clone or download".
+2) Une fois téléchargé, cliquer droit sur un des fichiers TP et l'ouvrir avec RStudio. 
+3) Le TP peut se faire sans avoir de données au préablable. 
+
+
 
 *Lab sessions for students of humanities (in French). The sessions will be modified and added progressively.*
 
