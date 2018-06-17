@@ -367,9 +367,15 @@ plot(x,y, type="o", col="green", lty=1, lwd=0.5, main="Title")
 # Vous avez passé l'épreuve de feu des graphiques....Vous pouvez encadrer vos graphiques
 # ...dans R...ou plutôt les sauvegarder.
 # Allez dans Export qui se trouve dans le cadre au dessus-de votre graphique.
-# Sauvegardez votre graphique où vous le souhaitez en cliquant sur "save as image". 
-# Puis : cliquez sur le bouton "save"  en bas à droite de la fenêtre qui vient de s'ouvrir.
-# Sauvegardez un graphique effectué précédemment : cliquez sur la flèche gauche jusqu'à ce que vous 
+# Sauvegardez votre graphique où vous le souhaitez en cliquant sur "save as image".
+# 
+# Une fenêtre s'ouvre. Pour enregistrer votre graphique à un endroit voulu, cliquez sur
+# "Directory". Choisissez l'endroit où vous voulez enregistrer vos graphiques.
+# Renommez votre graphique à côté de "file name".
+# Puis : cliquez sur le bouton "save".
+
+# Sauvegardez un graphique effectué précédemment : dans la fenêtre "Plots" 
+# cliquez sur la flèche de gauche bleue jusqu'à ce que vous 
 # trouviez le graphique à sauvegarder. => Export et save "save as image".
 
 # Vérifiez qu'il a bien été enregistré... on ne sais jamais ... avec ces vilaines bêtes
@@ -380,3 +386,47 @@ plot(x,y, type="o", col="green", lty=1, lwd=0.5, main="Title")
 # @@@@@@@@@@@@@@@@@@ ........ QUIZZ....... @@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+# Rappel des valeurs de x et y
+x <- c(1,2,3,3,3,3,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,8,9,10)
+y <- c(2,3,4,5,7,7,6,6,6,6,6,6,5,5,5,5,5,4,4,4,3,3,3,3,2,1)
+
+# Vous colorez un histogramme et un nuage de point en rouge. Quel code ajoutez-vous ?
+hist(x)
+plot(x,y)
+# Ajoutez un titre au nuage de points et labellisez les axes x et y.
+
+# Vous attribuez deux couleurs au graphique en barre ci-dessous :
+
+barplot(sexe)
+# Ajoutez une légende et un titre à ce barplot.
+
+
+# Les points de ce nuage de points ne sont pas du tout visibles. 
+
+plot(x,y, col="lightgrey", cex=0.5, pch=3, main=":0/ Graphique peu visible :0/")
+
+# A quoi correspond cex ?
+
+# A quoi corresopnd pch ?
+
+# Proposez un graphique plus adéquat et...modifiez le titre ! :)
+
+# Euh comment on enregistre son graphique, déjà....?
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@ BILAN DE LA SEANCE @@@@@@@@@@@@@@@@@@@@@@@@@
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# Je sais :
+
+# Mettre un titre au graphique : oui/ non
+# Labelliser les axes : oui/ non
+# Ajouter une légende à un graphique en barre : oui/ non
+
+# Colorer un graphique : oui/ non
+# Ajouter plusieurs couleurs à un graphique : oui/ non
+
+# Augmenter la taille des points d'un nuage de points : oui/ non
+# Modifier la forme des points d'un nuage de points : oui/ non
+
+# Enregistrer son graphique.

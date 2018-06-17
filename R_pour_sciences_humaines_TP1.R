@@ -54,7 +54,9 @@ calcul1
 # ________________________________________________________________
 # ________________________________________________________________
 
-# On peut donner un nom à une liste de mots :
+# On peut donner un nom à une liste de mots. Des qu'on ajoute plusieurs éléments dans le 
+# vecteur on doit ajouter un "c" qui veut dire "combine", ouvrir des parenthèses et mettres les 
+# mots ou charactères entre " ". On ajouter une vigule entre les mots :
 
 mots <- c("cailloux","choux","genoux","hiboux", "poux")
 mots
