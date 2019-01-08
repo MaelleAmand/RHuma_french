@@ -29,11 +29,12 @@ To Build these lab sessions I drew inspiration from Taylor Arnold's lab sessions
 https://github.com/statsmaths/diderot_r  & http://www.lpsm.paris/dw/doku.php?id=users:fischer:fischer_en & http://www.normalesup.org/~levrard/
 
 
-Thanks to teachers from Maths departments who cross the boarder towards the humanities to make us discover their world. 
+**Special thanks**
+Thanks to teachers from Maths departments who cross the boarder towards the humanities to make us discover their world (Mathilde Mougeot, Clément Levrard).
 
-Thank you for all those who worked hard to create MOOCS on data analysis. 
+Thanks to Claire Zalc and Claire Lemercier who help get better insight of data science applied for the Arts.
 
-Thanks to those who answer questions in forums on RStudio.
+Thank you for all those who worked hard to create MOOCS on data analysis, to those who answer questions in forums on RStudio.
 
-Thanks to Youtubers who spend time making videos to make us progress.
+Thanks to Youtubers who spend so much time making videos to make us progress.
 
